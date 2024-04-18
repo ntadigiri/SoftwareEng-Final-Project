@@ -1,0 +1,529 @@
+*{ 
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: fixed;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 20px 100px; 
+    flex-grow: 1;  
+    flex-basis: 200;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: #F9F1F0;
+    position: relative;  
+    font-size: 20px; 
+    margin-left: 20px;
+}
+
+.navBar a:hover{
+    text-decoration: underline; 
+}
+
+.navBar .login{
+    padding: 6px 24px;
+    background: transparent;
+    border: 2px solid #F9F1F0;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #F9F1F0;
+    font-weight: 500; 
+}
+
+.main{
+	color: #F9F1F0;
+	display: flex;
+    font-family: 'Montserrat', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+    background-image: url(https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-position: center;
+    background-size: cover; 
+}
+
+.heading{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.about{
+    background-color: black;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px
+}
+
+.aboutContent{
+    color: white;
+}
+
+.contactContent{
+    color: #F9F1F0;
+}
+
+h1{
+    text-align: center;
+    background-color: #a28089;
+    border-radius: 2rem;
+    border: 1px solid #cccccc;
+}
+
+h1:hover {
+    cursor: default;
+  }
+
+h2{
+    color: #F9F1F0;
+    font-size: 30px; 
+}
+
+
+.container{
+	background-color: #000000;
+	box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+	padding: 20px;
+	width: 400px;
+	max-width: 100%;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+}
+
+.container2{
+	background-color: #F9F1F0;
+	box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+	padding: 20px;
+	width: 400px;
+	max-width: 100%;
+    border-radius: 2rem;
+} 
+
+.container3{
+	background-color: #F9F1F0;
+	box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+	padding: 20px;
+	width: 400px;
+	max-width: 100%;
+    border-radius: 2rem;
+    display: none;
+} 
+
+.container4{
+	background-color: #F9F1F0;
+	box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+	padding: 20px;
+	width: 400px;
+	max-width: 100%;
+    border-radius: 2rem;
+    display: none;
+} 
+
+
+.display{
+    display: flex;
+    max-width: 100%;
+    height: 36px;
+}
+
+.placeholder:hover{
+    cursor:default; 
+}
+
+.copyInput{
+    flex-grow: 1;
+    padding: 0 8px;
+    font-size: 14px; 
+    border: 1px solid #cccccc; 
+    border-right: none;
+    outline: none; 
+    background-color: #a28089;
+    color:#ffffff;
+}
+
+.copyInput::placeholder{
+    color: #ffffff;
+}
+
+.copyButton{
+    flex-shrink: 0; 
+    width: 36px;
+    height: 36px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; 
+    outline: none;
+    border: 1px solid #ffffff; 
+    cursor: pointer; 
+    background-color: #a28089;
+}
+
+.copyButton:hover{
+    border: 1px solid #eeeeee;
+}
+
+.setting{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+}
+
+.check{
+    cursor: pointer; 
+    display: flex;  
+}
+
+input.check{
+    width: 20px;
+    height: 20px;
+}
+
+.generate{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    width: 100%; 
+    color: #ffffff; 
+    border: 1px solid #cccccc;
+    padding: 8px 16px; 
+    font-size: 14px;
+    cursor: pointer; 
+    background-color: #a28089;
+}
+
+.fixedInput{
+    width: 150px;
+}
+
+.formRow{
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center; 
+}
+
+.formInput{
+    box-sizing: border-box;
+    padding:2rem 1rem 0.5rem 0.5rem;
+    border: 0;
+    border-radius: 2rem;
+    border-bottom: 1px black;
+    width: 100%;
+    flex: 1;
+}
+
+
+.formInput::placeholder{
+    color: transparent;
+    display: none;
+}
+
+.formInput:focus{
+    outline: none;
+    border-bottom: 2px solid #a28089;
+    padding: 18px;
+    font-size: 15.5px;
+}
+
+.formLabel{
+    position: absolute;
+    color: black;
+    bottom: 0.5rem;
+    left: 1rem;
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+    padding: 10px;
+} 
+
+.material-icons{
+    margin-left: auto;
+}
+
+.formInput:focus~.formLabel, .formInput:not(:placeholder-shown)~.formLabel {
+    transform: scale(.85) translateY(-1.3rem);
+    color: #a28089;
+}
+
+.forgotPwd{
+    float: right;
+    text-decoration: none;
+    color: black;
+    margin-top: 1rem;
+}
+
+.submitBtn{
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    background: #a28089;
+    color: #F9F1F0;
+    border: 0;
+}
+
+.submitBtn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.signUp{
+    color: black;
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.signUp >a{
+    text-decoration: none;
+    color: #a28089;
+}
+
+.loginP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a28089;
+    flex-direction: column;
+	padding: 10px;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.loginH{
+    text-align: center;
+    background-color: #F9F1F0;
+    border-radius: 0;
+    border: 0px solid #cccccc;
+}
+
+@media only screen and (min-width: 430px) and (max-width: 932px) {
+    header .navBar {
+        display: none;
+    } 
+    
+    .main{
+        background-size: cover;
+        background-position: center, center;
+    }
+    
+    .container h2{
+        text-align: center;
+    }
+        
+    .about{
+        display: none;
+    }
+    
+    .contact{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 832px){
+    header .navBar {
+        display: none;
+    } 
+    
+    .main{
+        background-size: cover;
+        background-position: center, center;
+    }
+    
+    .container h2{
+        text-align: center;
+    }
+    
+    .about{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+}
+
+.errorMsg{
+    color: #a28089;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 23px 0;
+}
+
+.btnDel{
+    position: absolute; 
+    top: 5px;
+    right: 5px; 
+    cursor: pointer; 
+}
+
+#alert{
+    display: none;
+}
+
+.title{
+    text-align: center;
+}
+
+.aboutContainer {
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.contact{
+    background-color: #222831;
+    padding: 20px;
+}
+
+.contactContainer{ 
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.contactLeft{
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.contactContent{
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactInfo{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    border-radius: 50px;
+} 
+
+.contactInfo:focus{
+    border: 2px solid #a28089;
+}
+
+.contactContent textarea{
+    height: 140px; 
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+img{
+    border-radius: 2rem;
+    width: 100%; 
+    height: auto; 
+    padding: 10px; 
+}
+
+.managerP{
+    background: #a28089;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 144px;
+}
+
+#passwordList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.passwordEntry{
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px; 
+    box-sizing: border-box;
+}
+
+.passwordEntry strong{
+    display: block;
+    margin-bottom: 5px;
+}
+        
+.passwordEntry button{
+    margin-top: 5px;
+}
+
+.managerP{
+    font-family: Arial, sans-serif;
+}
+
+.title{
+    text-align: center;
+}
+
+.container5{
+    width: 500px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#passwordForm {
+    margin-bottom: 0.5px; 
+}
+
+.pwdMang[type="text"],
+.pwdMang[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #F9F1F0;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<header>
+    <h2>PWX</h2>
+    <nav class ="navBar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="login.php" target="_blank"> <button class="login">Login</button> </a> 
+    </nav>
+</header>
+
+<section class="home" id="home">
+<div class="main">
+    <div class="container">
+        <h1>Password Generator</h1>
+    
+    <div class="display">
+        <input type="text" placeholder="Password" class="copyInput" id="password" readonly>
+        <button type="button" class="copyButton" id="copyIcon">
+            <span class="material-icons">content_copy</span>
+        </button>
+    </div>
+
+    <div class="settings">
+        <div class="setting">
+            <label>Password Length</label>
+            <input type="range" class="slider" id="range" min="1" max="25" value="1"/>
+            : <span id="op"></span>
+        </div>
+        <div class="setting">
+            <label>Include Uppercase Letters</label> 
+            <input type="checkbox" class="check" id="upperCase" checked/>
+        </div>
+        <div class="setting">
+            <label>Include Lowercase Letters</label> 
+            <input type="checkbox" class="check" id="lowerCase" checked/>
+        </div>
+        <div class="setting">
+            <label>Include Numbers</label> 
+            <input type="checkbox" class="check" id="numbers" checked/>
+        </div>
+        <div class="setting">
+            <label>Include Symbols</label> 
+            <input type="checkbox" class="check" id="symbols" checked/>
+        </div>
+        <button class="generate" id="generate">Generate Password</button>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="about" id="about"> 
+    
+     <div class="aboutContainer"> 
+        <form class="aboutRight">
+            <div class="aboutContent">
+            <h2 class="heading">About PWX</h2>
+            <p> Welcome to PWX - your all-in-one solution for password management and generation. In today's digital age, protecting your online accounts is crucial. PWX simplifies this process by offering a secure and convenient platform for generating and managing passwords. With PWX, you can effortlessly create strong and unique passwords tailored to your specifications. Our password generator allows you to customize the length and character types, ensuring maximum security for your accounts.</p>
+            </div>
+        </form>
+    
+    <div class="picture">
+        <img src="http://3.12.74.61/blog/wp-content/uploads/2024/04/pexels-fauxels-3184418-scaled.jpg" style="width: 550px; height:550px;" alt=""> 
+    </div>
+    </div> 
+
+</section>
+
+<section class="contact" id="contact"> 
+    
+    <div class="contactContainer"> 
+        <form class="contactLeft">
+            <div class="contactContent">
+            <h2 class="heading">Contact Us</h2>
+            <input type="text" name="name" placeholder="Name" class="contactInfo" required> 
+            <input type="email" name="email" placeholder="Email" class="contactInfo" required> 
+            <textarea name="message" placeholder="Your Message" class="contactInfo" required></textarea>
+            <button class="btn" type="submit">Submit</button>
+            </div>
+        </form>
+
+    <div class="picture">
+        <img src="https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000_1280.jpg" style="width: 500px; height:500px;" alt=""> 
+    </div>
+    </div> 
+</section>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
